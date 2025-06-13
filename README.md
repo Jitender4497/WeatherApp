@@ -9,4 +9,4 @@ A simple weather forecast app that shows real-time weather data.
 - Responsive design
 
 ## Live Demo
-[View App](https://jitender4497.github.io/weather-app/)
+[View App](https://jitender4497.github.io/WeatheApp/)
