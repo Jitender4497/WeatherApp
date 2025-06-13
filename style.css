@@ -19,35 +19,33 @@ body {
   overflow: hidden;
 }
 
-/* Creative credit placement */
+/* Creative credit at page bottom */
 .credit {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
+  position: fixed;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Brush Script MT', cursive, 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.7);
   z-index: 10;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.1);
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   cursor: default;
+  pointer-events: none;
 }
 
 .credit:hover {
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.95);
+  transform: translateX(-50%) translateY(-2px);
 }
 
 .credit .heart {
   color: #ff6b9d;
   animation: heartbeat 2s ease-in-out infinite;
   display: inline-block;
+  text-shadow: 0 0 10px rgba(255, 107, 157, 0.5);
 }
 
 @keyframes heartbeat {
@@ -95,14 +93,14 @@ body::after {
 }
 
 .weather-container {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
   border-radius: 24px;
   max-width: 420px;
   width: 100%;
   box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   animation: fadeInUp 0.8s ease-out;
   position: relative;
   overflow: hidden;
@@ -129,8 +127,8 @@ body::after {
   left: 2px;
   right: 2px;
   bottom: 2px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
   border-radius: 22px;
   z-index: -1;
 }
