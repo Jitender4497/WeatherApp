@@ -8,5 +8,5 @@ A simple weather forecast app that shows real-time weather data.
 - Temperature and humidity
 - Responsive design
 
-## Live Demo
-[View App](https://jitender4497.github.io/WeatheApp/)
+## Live
+[View](https://jitender4497.github.io/WeatherApp/)
