@@ -1,6 +1,6 @@
 async function getWeather() {
   const city = document.getElementById("cityInput").value.trim();
-  const apiKey = "YOUR_API_KEY_HERE"; // 🔁 Replace with your OpenWeatherMap API key
+  const apiKey = "5c7388f21b644b1e7029a29b9ac6a772"; // 🔁 Replace with your OpenWeatherMap API key
 
   if (!city) {
     alert("Please enter a city name");
@@ -42,5 +42,5 @@ async function getWeather() {
 
 // Load last searched city on page load
 window.onload = function () {
-  document.getElementById("cityInput").value = "Delhi"; // Default city
+  document.getElementById("cityInput").value = "Narnaul"; // Default city
 };
